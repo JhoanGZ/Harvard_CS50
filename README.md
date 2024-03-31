@@ -35,12 +35,12 @@ The course culminates in a final project.
 
 The decision to start this course is to widen my view of different teaching approaches and gain more knowledge in the basics of CS. 
 
-In my opinion, a good foundation serves for the long run in a professional enterprise. Additionally, I wanted to learn from another point of view and teaching practices.
+In my opinion, a good foundation serves for the long run into my professional enterprise. Additionally, I wanted to learn from another point of view and teaching practices.
 
 ## Folder Structure
 
-- `week_1/`:  Problem Set 1 solutions - Greedy Algorithm / Luhn's Algorithm / Nested Loops
-- `week_2/`:  Arrays - CLI Args - Cyphering
+- `week_1/`:  Set 1 solutions - Greedy Algorithm / Luhn's Algorithm / Nested Loops
+- `week_2/`:  Set 2 solutions Arrays - CLI Args - Cyphering
 - `week_3/`:  Algorithms
 - `week_4/`:  Memory Management
 - `week_5/`:  Data Structures
