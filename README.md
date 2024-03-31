@@ -13,7 +13,10 @@ More than just teaching you how to program in one language, this course teaches 
 
 ## Course Structure
 
-The course starts with a traditional but omnipresent language called C that underlies today’s newer languages. Through C, you’ll learn not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory, and all. The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. Toward the term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike. 
+The course starts with a traditional but omnipresent language called C that underlies today’s newer languages. 
+Through C, you’ll learn not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory, and all. 
+The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. 
+Toward the term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike. 
 
 The course culminates in a final project.
 
@@ -36,18 +39,18 @@ In my opinion, a good foundation serves for the long run in a professional enter
 
 ## Folder Structure
 
-- `week_1/`: Problem Set 1 solutions
-- `week_2/`: Arrays - C
-- `week_3/`: Algorithms
-- `week_4/`: Memory Management
-- `week_5/`: Data Structures
-- `week_6/`: Python
-- `week_6.5/`: Artificial Intelligence
-- `week_7/`: SQL
-- `week_8/`: HTML, CSS, JavaScript
-- `week_9/`: Flask
-- `week_10/`: Cybersecurity
-- `final_project/`: Final project files and documentation
+- `week_1/`:  Problem Set 1 solutions - Greedy Algorithm / Luhn's Algorithm / Nested Loops
+- `week_2/`:  Arrays - CLI Args - Cyphering
+- `week_3/`:  Algorithms
+- `week_4/`:  Memory Management
+- `week_5/`:  Data Structures
+- `week_6/`:  Python
+- `week_6.5/`:  Artificial Intelligence
+- `week_7/`:  SQL
+- `week_8/`:  HTML, CSS, JavaScript
+- `week_9/`:  Flask
+- `week_10/`:  Cybersecurity
+- `final_project/`:  Final project files and documentation
 
 ## Getting Started
 
