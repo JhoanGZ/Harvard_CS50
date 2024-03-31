@@ -62,7 +62,7 @@ CS50 is offered by Harvard University and is taught by experienced instructors w
 
 ## Additional Resources
 
-- [CS50 Official Website](https://cs50.harvard.edu/)
+- [CS50 Official Website](https://pll.harvard.edu/course/cs50-introduction-computer-science))
 - [CS50 on edX](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 
 ## License
