@@ -67,4 +67,4 @@ CS50 is offered by Harvard University and is taught by experienced instructors w
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](https://opensource.org/license/mit).
