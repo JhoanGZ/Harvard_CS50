@@ -1,0 +1,48 @@
+Timing Results
+    sorted5000 real 0.018s
+    sorted10000 real 0.039s
+    sorted50000 real 0.814s
+    reversed5000 real 0.116s
+    reversed10000 real 0.208s
+    reversed50000 real 5.428s
+    random5000 real 0.074s
+    random10000 real 0.199s
+    random50000 real 7.029s
+
+What sort1 uses: Bubble Sort
+How do you know?:
+With sorted results works better also there's a huge
+spike in time with random50000.txt way worse than Sort3.
+This gives a hint how sort3 works better
+
+Timing Results
+    sorted5000 real 0.015s
+    sorted10000 real 0.032s
+    sorted50000 real 0.775s
+    reversed5000 real 0.033s
+    reversed10000 real 0.039s
+    reversed50000 real 0.726s
+    random5000 real 0.035s
+    random10000 real 0.048s
+    random50000 real 0.769s
+
+What sort2 uses: Merge Sort
+How do you know?:
+it shows better results handling the bigger files.
+Also their times are consistently good between other results.
+
+Timing Results
+    sorted5000 real 0.040s
+    sorted10000 real 0.160s
+    sorted50000 real 3.282s
+    reversed5000 real 0.041s
+    reversed10000 real 0.133s
+    reversed50000 real 3.526s
+    random5000 real 0.057s
+    random10000 real 0.170s
+    random50000 real 3.534s
+
+What sort3 uses: Selection
+How do you know?:
+Checkin how it works with randomized files and their time results.
+This is a sorting resulting suspectedly from selection sort.

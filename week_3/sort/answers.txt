@@ -1,0 +1,17 @@
+What sort1 uses: Bubble Sort
+How do you know?:
+The performance degrades with larger input sizes and particularly with random data strongly indicates
+a Bubble Sort.
+Also it performs poorly on larger datasets and exhibits significant spikes in execution time with random input,
+which aligns with the observed behavior.
+
+What sort2 uses: Merge Sort
+How do you know?:
+it shows better results handling the bigger files.
+Also their times are consistently good between other results in this exercise.
+Execution times are well close to the behavior of Merge Sort.
+
+What sort3 uses: Selection Sort
+How do you know?:
+While the performance with random data suggests a selection-based algorithm,
+it aligns with the behavior of Selection Sort.
