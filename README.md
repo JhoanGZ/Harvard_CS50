@@ -1,34 +1,34 @@
 # CS50 Course Repository
 
-> This repository contains my coursework and projects for CS50, Harvard University’s intellectual enterprises of computer science and the art of programming.
+This repository contains my coursework and projects for CS50, Harvard University’s intellectual enterprises of computer science and the art of programming.
 
 ## Personal Thoughts
 
-> The decision to start this course is to expand my vision of different approaches in programming and thus acquire more knowledge in Computer Science Fundamentals.
+ The decision to start this course is to expand my vision of different approaches in programming and thus acquire more knowledge in Computer Science Fundamentals.
 
-> In my opinion, a good foundation serves for the long run into my professional enterprise.
-> Additionally, I wanted to learn from another point of view and teaching practices.
+ In my opinion, a good foundation serves for the long run into my professional enterprise.
+ Additionally, I wanted to learn from another point of view and teaching practices.
 
 ## About CS50
 
-> CS50 is designed for concentrators and non-concentrators alike. 
-> The course teaches how to solve problems, both with and without code, with an emphasis on correctness, design, and style. 
+ CS50 is designed for concentrators and non-concentrators alike. 
+ The course teaches how to solve problems, both with and without code, with an emphasis on correctness, design, and style. 
 
-> Topics include computational thinking, abstraction, algorithms, and data structures.
+ Topics include computational thinking, abstraction, algorithms, and data structures.
 
-> Problem sets are inspired by the arts, humanities, social sciences, and sciences. 
-> More than just teaching how to program in one language, this course teaches how to program fundamentally and how to teach oneself new languages ultimately.
+ Problem sets are inspired by the arts, humanities, social sciences, and sciences. 
+ More than just teaching how to program in one language, this course teaches how to program fundamentally and how to teach oneself new languages ultimately.
 
 ## Course Structure
 
-> The course starts with a traditional but omnipresent language called C that underlies today’s newer languages. 
+ The course starts with a traditional but omnipresent language called C that underlies today’s newer languages. 
 
-> Through C, it's not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory, and all. 
+ Through C, it's not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory, and all. 
 
-> The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. 
-> Toward the term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike.
+ The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. 
+ Toward the term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike.
 
-> The course culminates in a final project.
+ The course culminates in a final project.
 
 ## Topics Covered
 
@@ -61,11 +61,11 @@
 
 ## Getting Started
 
-> To get started, navigate to the relevant problem set or project folder and explore the files.
+ To get started, navigate to the relevant problem set or project folder and explore the files.
 
 ## Acknowledgments
 
-> CS50 is offered by Harvard University and is taught by experienced instructors with a passion for computer science education over the edX Education Platform.
+ CS50 is offered by Harvard University and is taught by experienced instructors with a passion for computer science education over the edX Education Platform.
 
 ## Additional Resources
 
@@ -74,4 +74,4 @@
 
 ## License
 
-> This project is licensed under the [Apache 2.0 License](https://opensource.org/licenses/apache-2.0).
+ This project is licensed under the [Apache 2.0 License](https://opensource.org/licenses/apache-2.0).
