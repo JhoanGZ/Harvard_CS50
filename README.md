@@ -61,17 +61,23 @@ This repository contains my coursework and projects for CS50, Harvard University
 
 ## Getting Started
 
- To get started, navigate to the relevant problem set or project folder and explore the files.
+To get started, navigate to the relevant problem set or project folder and explore the files.
 
 ## Acknowledgments
 
- CS50 is offered by Harvard University and is taught by experienced instructors with a passion for computer science education over the edX Education Platform.
+ CS50 is offered by Harvard University and is taught by David J. Malan, who is Gordon McKay Professor of the Practice of Computer Science at Harvard University in the School of Engineering and Applied Sciences as well as a Member of the Faculty of Education in the   
+ Graduate School of Education. 
+ CS50, which is among Harvard University’s largest courses, one of Yale University’s largest courses, and edX’s largest MOOC.
+
 
 ## Additional Resources
 
 - [CS50 Official Website](https://pll.harvard.edu/course/cs50-introduction-computer-science)
 - [CS50 on edX](https://www.edx.org/course/cs50s-introduction-to-computer-science)
-
+- [David J. Malan. Toward an Ungraded CS50](https://cs.harvard.edu/malan/publications/Toward_an_Ungraded_CS50.pdf)
+- [David J. Malan. Reinventing CS50](https://cs.harvard.edu/malan/publications/fp310-malan.pdf)
+  
 ## License
 
  This project is licensed under the [Apache 2.0 License](https://opensource.org/licenses/apache-2.0).
+ 
