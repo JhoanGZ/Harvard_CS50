@@ -76,6 +76,8 @@ To get started, navigate to the relevant problem set or project folder and explo
 - [CS50 on edX](https://www.edx.org/course/cs50s-introduction-to-computer-science)
 - [David J. Malan. Toward an Ungraded CS50](https://cs.harvard.edu/malan/publications/Toward_an_Ungraded_CS50.pdf)
 - [David J. Malan. Reinventing CS50](https://cs.harvard.edu/malan/publications/fp310-malan.pdf)
+- [David J. Malan. Computational thinking and assignment resubmission predict
+persistence in a computer science MOOC](https://cs.harvard.edu/malan/publications/jcal.12427.pdf))
   
 ## License
 
