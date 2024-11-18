@@ -66,8 +66,9 @@ To get started, navigate to the relevant problem set or project folder and explo
 ## Acknowledgments
 
  CS50 is offered by Harvard University and is taught by David J. Malan, who is Gordon McKay Professor of the Practice of Computer Science at Harvard University,
- in the School of Engineering and Applied Sciences as well as a Member of the Faculty of Education in the Graduate School of Education.<br> 
- CS50, which is among Harvard University’s largest courses, one of Yale University’s largest courses, and edX’s largest MOOC.
+ in the School of Engineering and Applied Sciences as well as a Member of the Faculty of Education in the Graduate School of Education.<br><br> 
+ 
+ CS50, which is among Harvard University’s largest courses and edX’s largest MOOC.
 
 
 ## Additional Resources
