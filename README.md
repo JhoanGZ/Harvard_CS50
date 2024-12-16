@@ -53,7 +53,7 @@ This repository contains my coursework and projects for CS50, Harvard University
 - `week_5/`: Data Structures
 - `week_6/`: Python
 - `week_6.5/`: Artificial Intelligence
-- `week_7/`: SQL
+- `week_7/`: SQL - SQLite
 - `week_8/`: HTML, CSS, JavaScript
 - `week_9/`: Flask
 - `week_10/`: Cybersecurity
