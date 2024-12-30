@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for holding in holdings %}
+                <tr>
+                    <td>{{ holding.symbol }}</td>
+                    <td>{{ holding.name }}</td>
+                    <td>{{ holding.shares }}</td>
+                    <td>{{ holding.price | usd }}</td>
+                    <td>{{ holding.total | usd }}</td>
+                    <td>
+                        <!-- Buy Form -->
+                        <form action="/buy" method="post" class="d-inline">
+                            <input type="hidden" name="symbol" value="{{ holding.symbol }}">
+                            <input type="number" name="shares" class="form-control-sm" min="1" placeholder="Shares" required>
+                            <button type="submit" class="btn btn-success btn-sm">Buy</button>
+                        </form>
+
+                        <!-- Sell Form -->
+                        <form action="/sell" method="post" class="d-inline">
+                            <input type="hidden" name="symbol" value="{{ holding.symbol }}">
+                            <input type="number" name="shares" class="form-control-sm" min="1" placeholder="Shares" required>
+                            <button type="submit" class="btn btn-danger btn-sm">Sell</button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Cash</td>
+                <td>{{ cash | usd }}</td>
+            </tr>
+            <tr>
+                <td colspan="4">Total</td>
+                <td>{{ total | usd }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

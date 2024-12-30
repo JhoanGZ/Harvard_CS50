@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Watchlist
+{% endblock %}
+
+{% block main %}
+    <h1>Stock Watchlist</h1>
+    <form action="/watchlist" method="post" class="form-inline mb-3">
+        <input type="text" name="symbol" placeholder="Add a stock symbol" class="form-control mr-2" required>
+        <button type="submit" class="btn btn-primary">Add</button>
+    </form>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for stock in watchlist %}
+                <tr>
+                    <td>{{ stock.symbol }}</td>
+                    <td>{{ stock.name }}</td>
+                    <td>{{ stock.price }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

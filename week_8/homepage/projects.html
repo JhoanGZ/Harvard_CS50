@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Projects</title>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="custom-header text-white text-center">
+        <div class="container">
+            <h1 class="fade-in">My Projects</h1>
+            <p class="lead fade-in">A showcase of my recent work</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <div class="row" id="projectsContainer">
+            <!-- Projects will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Project data
+        const projects = [
+            {
+                title: "E-commerce Website",
+                description: "A fully responsive e-commerce platform built with React and Node.js",
+                technologies: ["React", "Node.js", "MongoDB"],
+                image: "project1.jpg"
+            },
+            {
+                title: "Task Management App",
+                description: "A productivity app for managing daily tasks and projects",
+                technologies: ["Vue.js", "Firebase", "Bootstrap"],
+                image: "project2.jpg"
+            },
+            {
+                title: "Weather Dashboard",
+                description: "Real-time weather information using weather API",
+                technologies: ["JavaScript", "APIs", "CSS3"],
+                image: "project3.jpg"
+            }
+        ];
+
+        // Function to create project cards
+        function createProjectCard(project) {
+            return `
+                <div class="col-md-4 mb-4">
+                    <div class="card project-card">
+                        <div class="card-body">
+                            <h3 class="card-title">${project.title}</h3>
+                            <p class="card-text">${project.description}</p>
+                            <div class="technologies">
+                                ${project.technologies.map(tech => `<span class="badge bg-primary me-1">${tech}</span>`).join('')}
+                            </div>
+                            <button class="custom-btn mt-3" onclick="showProjectDetails('${project.title}')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Function to show project details
+        function showProjectDetails(projectTitle) {
+            const project = projects.find(p => p.title === projectTitle);
+            const details = `
+                Project: ${project.title}
+                Description: ${project.description}
+                Technologies: ${project.technologies.join(', ')}
+            `;
+            alert(details);
+        }
+
+        // Loading projects when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('projectsContainer');
+            container.innerHTML = projects.map(project => createProjectCard(project)).join('');
+
+            // Add fade-in effect
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                element.style.opacity = '1';
+            });
+        });
+    </script>
+</body>
+</html>

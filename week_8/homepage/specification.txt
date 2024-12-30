@@ -1,0 +1,56 @@
+HTML Tags
+1. <nav> - Navigation bar structure
+2. <header> - Page header sections
+3. <main> - Main content area
+4. <footer> - Page footer
+5. <div> - Container elements
+6. <form> - Contact form
+7. <input> - Form input fields
+8. <textarea> - Multiline text input
+9. <button> - Interactive buttons
+10. <a> - Hyperlinks
+11. <ul> - Unordered lists
+12. <li> - List items
+13. <h1>, <h2>, <h3>, <h4>, <h5> - Heading hierarchy
+14. <p> - Paragraphs
+15. <span> - Inline text elements
+16. <label> - Form field labels
+17. <meta> - Metadata information
+18. <link> - External resource links
+19. <script> - JavaScript code
+
+CSS Properties
+1. background-color - Setting background colors
+2. color - Text colors
+3. margin/margin-bottom/margin-top - Spacing between elements
+4. padding - Internal spacing
+5. transform - Element animations and transitions
+6. transition - Smooth state changes
+7. font-family - Typography settings
+8. border-radius - Rounded corners
+9. box-shadow - Element shadows
+10. opacity - Element transparency
+11. width/max-width - Element dimensions
+12. display - Element display behavior
+13. text-align - Text alignment
+14. line-height - Text spacing
+15. font-size - Text size
+
+JavaScript
+The website includes several interactive features powered by JavaScript:
+-> Form validation and submission handling with feedback modal
+-> Dynamic project card generation in the projects page
+-> Fade-in animations for page elements
+-> Interactive buttons with click handlers
+-> Bootstrap modal functionality for the contact form
+
+Bootstrap Features
+The website utilizes multiple Bootstrap components and features:
+-> Responsive navigation bar with mobile menu
+-> Grid system for layout
+-> Cards for content containers
+-> Progress bars for skills display
+-> Modal dialog for form submission feedback
+-> Form styling and validation
+-> Buttons and button styles
+-> Responsive breakpoints for mobile optimization

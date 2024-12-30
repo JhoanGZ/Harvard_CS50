@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>Birthdays</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Birthdays</h1>
+        </div>
+        <div class="container">
+            <div class="section">
+                <!-- Alerting section -->
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        <div class="alert alert-warning" role="alert">
+                            {% for message in messages %}
+                                <p>{{ message }}</p>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                {% endwith %}
+
+                <!-- Birthday Form -->
+                <h2>Add a Birthday</h2>
+                <form action="/" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="number" name="month" placeholder="Month (1-12)" min="1" max="12" required>
+                    <input type="number" name="day" placeholder="Day (1-31)" min="1" max="31" required>
+                    <button type="submit">Add</button>
+                </form>
+
+                <!-- Search Form -->
+                <h2>Search Birthdays</h2>
+                <form action="/" method="get">
+                    <input type="text" name="search" placeholder="Search by name">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+
+            <div class="section">
+                <!-- Birthday Table -->
+                <h2>All Birthdays</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Birthday</th>
+                            <th>Countdown (days)</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for birthday in birthdays %}
+                        <tr>
+                            <td>{{ birthday.name }}</td>
+                            <td>{{ birthday.month }}/{{ birthday.day }}</td>
+                            <td>{{ birthday.countdown }}</td>
+                            <td>
+                                <!-- Deleting button -->
+                                <form action="/delete" method="post" style="display: inline;">
+                                    <input type="hidden" name="id" value="{{ birthday.id }}">
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

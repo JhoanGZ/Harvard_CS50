@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // Waiting for the DOM to be fully loaded before running any JavaScript
+            document.addEventListener('DOMContentLoaded', function() {
+                
+                // Part 1: Multiple Choice Logic
+                let buttons = document.querySelectorAll('.choice-button');
+                let feedback1 = document.querySelector('#feedback1');
+
+                // Add click event listeners to all multiple choice buttons
+                buttons.forEach(function(button) {
+                    button.addEventListener('click', function() {
+                        // Reset all buttons to default state
+                        buttons.forEach(b => {
+                            b.style.backgroundColor = '#d9edff';
+                        });
+
+                        // Check if the answer is correct
+                        if (button.dataset.correct === 'true') {
+                            button.style.backgroundColor = '#00ff00'; // Green
+                            feedback1.innerHTML = 'Correct!';
+                        } else {
+                            button.style.backgroundColor = '#ff0000'; // Red
+                            feedback1.innerHTML = 'Incorrect';
+                        }
+                    });
+                });
+
+                // Part 2: Free Response Logic
+                let checkButton = document.querySelector('#check-answer');
+                let input = document.querySelector('#answer-input');
+                let feedback2 = document.querySelector('#feedback2');
+
+                // Add click event listener to the check answer button
+                checkButton.addEventListener('click', function() {
+                    // Convert both the input and correct answer to lowercase for case-insensitive comparison
+                    let userAnswer = input.value.toLowerCase().trim();
+                    let correctAnswer = 'paris';
+
+                    if (userAnswer === correctAnswer) {
+                        input.style.backgroundColor = '#00ff00'; // Green
+                        feedback2.innerHTML = 'Correct!';
+                    } else {
+                        input.style.backgroundColor = '#ff0000'; // Red
+                        feedback2.innerHTML = 'Incorrect';
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- Multiple choice question -->
+                <h3>What is the largest planet in our solar system?</h3>
+
+                <!-- Answer buttons with data attributes to identify correct answer -->
+                <button class="choice-button" data-correct="false">Saturn</button>
+                <button class="choice-button" data-correct="true">Jupiter</button>
+                <button class="choice-button" data-correct="false">Uranus</button>
+                <button class="choice-button" data-correct="false">Neptune</button>
+
+                <!-- Feedback paragraph for multiple choice -->
+                <p id="feedback1"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- Free response question -->
+                <h3>What is the capital of France?</h3>
+
+                <!-- Input field and submit button -->
+                <input type="text" id="answer-input" placeholder="Type your answer here">
+                <button id="check-answer">Check Answer</button>
+
+                <!-- Feedback paragraph for free response -->
+                <p id="feedback2"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+/* CSS Custom Properties (Variables) for consistent theming */
+:root {
+    --primary-color: #6d28d9;
+    --secondary-color: #4f46e5;
+    --background-color: #1f2937;
+    --text-color: #f3f4f6;
+    --text-color-two: #000000;
+    --hover-color: #374151;
+}
+
+/* Base body styles with smooth background transition */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    text-align: left;
+    transition: background-color 0.3s ease;  /* Smooth transition for theme changes */
+}
+
+/* Container for content centering and responsive width */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1200px;  /* Maximum width for large screens */
+}
+
+/* Header styling with gradient background and shadow */
+.header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: #fff;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+/* Section styling with subtle background and rounded corners */
+.section {
+    background-color: rgba(255, 255, 255, 0.05);  /* Slightly transparent white */
+    border-radius: 8px;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;  /* Smooth transition for hover effects */
+}
+
+/* Hover effects for sections with elevation change */
+.section:hover {
+    background-color: var(--hover-color);
+    transform: translateY(-5px);  /* Slight upward movement on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Main heading with gradient text effect and animation */
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #fff, #f3f4f6);
+    -webkit-background-clip: text;  /* Creates gradient text effect */
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+/* Gradient animation keyframes for h1 */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Button and submit input styling with gradient background */
+button, input[type="submit"] {
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: 25px;  /* Rounded corners for modern look */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effects for buttons */
+button:hover, input[type="submit"]:hover {
+    transform: translateY(-2px);  /* Slight elevation on hover */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);  /* Enhanced shadow on hover */
+}
+
+/* Text input styling */
+input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid transparent;
+    border-radius: 8px;
+    color: var(--text-color-two);
+    font-size: 1rem;
+    line-height: 1.8;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 300px;  /* Maximum width for better readability */
+}
+
+/* Focus state for text inputs */
+input[type="text"]:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.3);  /* Focus ring effect */
+}
+
+/* Hover state for text inputs */
+input[type="text"]:hover {
+    background-color: rgba(255, 255, 255, 0.15);  /* Slightly lighter on hover */
+}
+
+/* Responsive design adjustments for mobile devices -- Responsive First Design -- */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;  /* Smaller heading for mobile screens */
+    }
+
+    .section {
+        padding: 1rem 1.5rem;  /* Reduced padding for mobile */
+    }
+}
