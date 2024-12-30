@@ -56,7 +56,7 @@ This repository contains my coursework and projects for CS50, Harvard University
 - `week_7/`: SQL - SQLite
 - `week_8/`: HTML, CSS, JavaScript
 - `week_9/`: Flask
-- `week_10/`: Cybersecurity
+- `week_X/`: Cybersecurity
 - `final_project/`: Final Project Files and Documentation
 
 ## Getting Started
