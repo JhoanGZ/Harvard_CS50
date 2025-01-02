@@ -1,0 +1,20 @@
+{
+  "name": "code-snippet-library-backend",
+  "version": "1.0.0",
+  "description": "Backend for Code Snippet Library",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "code-snippet-library-backend": "file:",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

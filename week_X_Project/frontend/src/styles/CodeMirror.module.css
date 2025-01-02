@@ -1,0 +1,29 @@
+.editorContainer {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: #1a1b26;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; 
+}
+
+.editor {
+    flex: 1;
+    height: 100%;
+    position: relative; 
+    overflow: auto; 
+}
+
+.editor :global(.cm-focused) {
+    outline: none !important;
+}
+
+.editor :global(.cm-line) {
+    padding-left: 4px !important;
+}
+
+.editor :global(.cm-lineNumbers) {
+    min-width: 3em !important;
+    padding-right: 8px !important;
+}   
