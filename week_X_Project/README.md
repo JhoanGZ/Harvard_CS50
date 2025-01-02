@@ -192,13 +192,13 @@ const dotenv = require('dotenv');
 ````
 
 - express
-  Web framework for routing and middleware
+  - Web framework for routing and middleware
 - mongoose
-   MongoDB object modeling tool
+  - MongoDB object modeling tool
 - cors
-   Enables cross-origin requests (necessary for frontend communication)
+   - Enables cross-origin requests (necessary for frontend communication)
 - dotenv
-   Loads environment variables for configuration
+   - Loads environment variables for configuration
 
 ```javascript
 Database Schema
