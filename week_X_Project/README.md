@@ -189,13 +189,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const dotenv = require('dotenv');
-
+````
 
 express: Web framework for routing and middleware
 mongoose: MongoDB object modeling tool
 cors: Enables cross-origin requests (necessary for frontend communication)
 dotenv: Loads environment variables for configuration
 
+```javascript
 Database Schema
 javascriptCopyconst snippetSchema = new mongoose.Schema({
     title: { type: String, required: true },
