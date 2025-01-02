@@ -25,8 +25,8 @@ This repository contains my coursework and projects for CS50, Harvard University
 
  Through C, it's not only about functions, variables, conditionals, loops, and more, but also about how computers themselves work underneath the hood, memory, and all. 
 
- The course then transitions to Python, a higher-level language that you’ll understand all the more because of C. 
- Toward the term’s end, the course introduces SQL, via which you can store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike.
+ The course then transitions to Python, a higher-level language, seeking to engage a learning path to other study fields. 
+ Toward the term’s end, the course introduces SQL, via which one does store data in databases, along with HTML, CSS, and JavaScript, via which you can create web and mobile apps alike.
 
  The course culminates in a final project.
 
@@ -57,7 +57,7 @@ This repository contains my coursework and projects for CS50, Harvard University
 - `week_8/`: HTML, CSS, JavaScript
 - `week_9/`: Flask
 - `week_X/`: Cybersecurity
-- `final_project/`: Final Project Files and Documentation
+- `week_X_project/`: Final Project Files and Documentation
 
 ## Getting Started
 
